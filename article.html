@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0">
+
+    <!--SEO-->
+    <title>云库网</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <meta name="description"
+          content="云库网-专业的CREO资源库,图文教程库、实用工具集、知识库、Creo外挂插件、自动工程图、EMX教程、EFX钢结构、vuforiaAR体验、Creo运动仿真、Creo机构仿真!"/>
+    <meta name="Keywords" content="proe,creo,ptc,protoolkit,emx,efx,vuforia,autotools,autodrawing"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/gdt-style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-markdown.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="./js/html5shiv.min.js"></script>
+    <script src="./js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--导航条-->
+<div class="cc-nav">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--导航头功能按钮-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">导航菜单</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--LOGO信息-->
+                <a class="navbar-brand" href="http://www.creocc.com/index.html">云库网</a>
+            </div>
+
+            <!--导航内容-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--用户中心-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">用户中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">用户登录</a></li>
+                            <li><a href="#">后台管理</a></li>
+                            <li><a href="#">用户注销</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--搜索条-->
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="搜索">
+                    </div>
+                </form>
+                <!--导航列表-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="./index.html">资料
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li><a href="./article.html">知识</a></li>
+                    <li><a href="#">插件</a></li>
+                    <li><a href="#">教程</a></li>
+                    <li><a href="./downloads.html">软件</a></li>
+
+                </ul>
+
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+
+<div class="cc-art-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 cc-art-nav hidden-sm hidden-xs">
+                <a class="cc-art-nav-head"  href="#">PROTOOLKIT</a>
+                <!--一级菜单-->
+                <ul class="nav nav-tabs nav-stacked" style="">
+                    <li class="active"><a href="#">Applet环境设置</a></li>
+                    <li>
+                        <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">对象模型
+                            <span class="glyphicon glyphicon-triangle-bottom"></span>
+                        </a>
+
+                        <!--二级菜单，href与id关联-->
+                        <ul id="systemSetting" class="nav nav-list collapse secondmenu">
+                            <li><a href="#">模式对象</a></li>
+                            <li><a href="#">模型对象</a></li>
+                            <li><a href="#">实体对象</a></li>
+                            <li><a href="#">零件对象</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">菜单及命令</a></li>
+                    <li><a href="#">装配及装配元件</a></li>
+                    <li><a href="#">工程图开发</a></li>
+                    <li><a href="#">项目实战</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 cc-art-main">
+                <div id="content"></div>
+                <div class="cc-art-pre-next">
+                    <button type="button" class="btn btn-success cc-art-pre">上一节</button>
+                    <button type="button" class="btn btn-success cc-art-next">下一节</button>
+                </div>
+            </div>
+            <div class="cc-art-edit">
+                <button type="button" class="btn btn-success">编辑</button>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--页脚-->
+<div class="cc-footer">
+    <div class="container">
+        <div class="contact-way">
+            <div class="other-way">
+                <a href="#" target="_blank" class="weixin-icon"></a>
+                <!--<a href="" class="tencen-icon"></a>-->
+                <a href="#" target="_blank" class="sina-icon"></a>
+                <a href="#" target="_blank" class="facebook-icon"></a>
+                <a href="#" target="_blank" class="google-icon"></a>
+            </div>
+        </div>
+        <nav class="hidden-xs">
+            <a href="#" target="_blank">关于我们</a><i>|</i>
+            <a href="#" target="_blank">加入我们</a><i>|</i>
+            <a href="#" target="_blank">联系我们</a><i>|</i>
+            <a href="#" target="_blank">企业合作</a><i>|</i>
+            <a href="#" target="_blank">讲师合作</a><i>|</i>
+            <a href="#" target="_blank">帮助中心</a><i>|</i>
+            <a href="#" target="_blank">黑板报</a><i>|</i>
+            <a href="#" target="_blank">友情链接</a>
+        </nav>
+        <div class="copyright hidden-xs">Copyright © 2018-2028 creocc.com All Rights Reserved. 浙ICP备19046567号
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="side-bar hidden-xs hidden-sm">
+    <a href="#" class="icon-qq glyphicon glyphicon-envelope">QQ在线咨询</a>
+    <a target="_blank" href="" class="icon-blog">微博</a>
+    <a href="#" class="icon-mail">mail</a>
+    <a href="" class="icon-chat">微信
+        <div class="chat-tips"><img src="./images/code.jpg" alt="微信订阅号"></div>
+    </a>
+
+</div>
+
+<!--JS-->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap-markdown.js"></script>
+<script src="./js/marked.js"></script>
+<script>
+    document.getElementById('content').innerHTML =
+        marked(
+            "# Applet环境设置\n" +
+            "\n" +
+            "## 1. 下载java\n" +
+            "\n" +
+            "+ 进入下载页面下载最新版32位JRE(Windows x86 Offline)\n" +
+            "\n" +
+            "  [JRE下载页面](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)\n" +
+            "\n" +
+            "+ 或者直接点击链接下载\n" +
+            "\n" +
+            "  [jre-8u171-windows-i586.exe](http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jre-8u171-windows-i586.exe)\n" +
+            "\n" +
+            "## 2. 下载32位版firefox  \n" +
+            "\n" +
+            "[Firefox-Setup-52.7.3esr.exe](https://download-installer.cdn.mozilla.net/pub/firefox/releases/52.7.3esr/win32/en-GB/Firefox%20Setup%2052.7.3esr.exe)\n" +
+            "\n" +
+            "\t(64位浏览器大多不支持,IE体验性太差,也可以选择使用其他32位浏览器)\n" +
+            "\n" +
+            "## 3. 安装JRE\n" +
+            "\n" +
+            "1. 安装过程不再赘述\n" +
+            "\n" +
+            "2. 安装完成后添加`JAVA_HOME`环境变量,值为java安装目录(例如:E:\\Tools\\JRE32)\n" +
+            "\n" +
+            "3. 添加`classpath`环境变量,值为`  .;%JAVA_HOME%\\lib `\n" +
+            "\n" +
+            "4. 测试java环境, 黑窗口输入`java -version` 查看\n" +
+            "\n" +
+            "5. 修改java安装目录`\\lib\\security`下面` java.policy`文件,在grant代码块中增加\n" +
+            "\n" +
+            "   ```c\n" +
+            "   permission java.security.AllPermission;   \n" +
+            "   ```\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "6. 修改java配置,`控制面板`--`配置JAVA`--`安全`--`编辑站点列表` --增加如下站点\n" +
+            "\n" +
+            "   ```c++\n" +
+            "   file:///\n" +
+            "   ```\n" +
+            "\n" +
+            "\n" +
+            "## 总结\n" +
+            "\n" +
+            "\t至此,环境搭建完毕,现在可以32位firefox用打开本地电脑任意目录的帮助文档均可正常使用!\n" +
+            "\n");
+</script>
+</body>
+</html>

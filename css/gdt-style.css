@@ -1,0 +1,70 @@
+/* Elements----------------------------------------*/
+
+.side-bar a,.chat-tips i {
+	background-image: url(../images/gdt-img.png);
+	background-size: 200%;
+	background-repeat: no-repeat;
+}
+/*右侧悬浮icon*/
+.side-bar {
+	width: 33px;
+	position: fixed;
+	bottom: 10px;
+	right: 0px;
+	font-size: 0;
+	line-height: 0;
+	z-index: 100;
+}
+.side-bar a {
+	width: 33px;
+	height: 33px;
+	display: inline-block;
+	background-color: #43a047;
+	margin-bottom: 2px;
+}
+.side-bar a:hover {
+	background-color: #76d275;
+
+}
+.side-bar .icon-qq {
+    display: none;
+	background-position: -5px -49px;
+}
+.side-bar .icon-chat {
+	background-position: -5px -94px;
+	position: relative;
+}
+.side-bar .icon-chat:hover .chat-tips {
+     display: block;
+ }
+.side-bar .icon-blog {
+    display: none;
+	background-position: -5px -142px;
+}
+.side-bar .icon-mail {
+    display: none;
+	background-position: -5px -189px;
+}
+.side-bar .icon-totop {
+	background-position: 0 -334px;
+}
+.chat-tips {
+	padding: 10px;
+	border: 1px solid #ccc;
+	position: absolute;
+	right: 35px;
+	bottom: 0px;
+	background-color: #ffffff;
+	display: none;
+    z-index: 999;
+}
+.chat-tips img {
+    width:120px;
+    height: 120px;
+}
+
+.side-bar:hover a{
+    display: block;
+}
+
+

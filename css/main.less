@@ -1,0 +1,450 @@
+@maincolor: #5cb85c;
+@maincolor-hover:#449d44;
+@maincolor-light: #76d275;
+@mainwhite: #ffffff;
+
+@bggray-light: #f4f4f4;
+@textgray: #757575;
+@textmain: #444;
+
+//bootsrap样式覆盖
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Microsoft YaHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  font-size: 14px;
+  color: #444;
+}
+
+.text-head {
+  color: @textmain;
+}
+
+.text-desc {
+  color: @textgray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 16px;
+  color: @textgray;
+  text-decoration: none;
+}
+
+p, span {
+  color: @textgray;
+  font-weight: lighter;
+}
+
+a, p, span {
+  text-decoration: none;
+}
+
+body {
+  background-color: @bggray-light;
+}
+
+.btn-success {
+  font-size: 14px;
+  padding: 5px 20px;
+  border-radius: 0px;
+}
+
+//导航栏样式修改
+.cc-nav {
+  .navbar {
+    border-radius: 0px;
+  }
+  > .navbar-default {
+    background-color: @maincolor;
+    border-color: @maincolor;
+
+    // 修改logo样式
+    .navbar-brand {
+      color: @mainwhite;
+      font-size: 24px;
+    }
+    .navbar-nav {
+      > .open > a {
+        background-color: @maincolor-light;
+        color: @mainwhite;
+      }
+      a {
+        color: @mainwhite;
+
+        &:active, &:visited {
+          color: @mainwhite;
+        }
+        &:hover {
+          color: @mainwhite;
+          background-color: @maincolor-light;
+        }
+
+      }
+
+    }
+  }
+
+  .navbar-header {
+    .navbar-toggle {
+      background-color: transparent;
+    }
+    .navbar-toggle span {
+      background-color: @mainwhite;
+    }
+
+  }
+
+  //搜素框样式修改
+  .navbar-form {
+    .form-control {
+      background-color: @maincolor-light;
+      border-radius: 1px;
+      height: 28px;
+      width: 140px;
+      margin-top: 3px;
+      border: none;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: @mainwhite;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: @mainwhite;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: @mainwhite;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: @mainwhite;
+      }
+      &:hover {
+        background-color: @mainwhite;
+        color: #333;
+      }
+    }
+  }
+
+  .dropdown {
+    .dropdown-menu {
+      top: 105%;
+      min-width: 100%;
+      background-color: @maincolor;
+      border-radius: 0px;
+      border: none;
+      > li > a {
+        color: @mainwhite;
+
+      }
+      a span {
+        color: @mainwhite;
+      }
+    }
+    .caret {
+      color: @mainwhite;
+    }
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    color: @mainwhite;
+    &:active, &:hover {
+      color: @mainwhite;
+    }
+  }
+
+}
+
+//轮播图
+.cc-lunbo {
+  padding: 0;
+  margin-top: 50px;
+  background-color: @mainwhite;
+  margin-bottom: 15px;
+  .row {
+    overflow: hidden;
+  }
+  .container {
+    height: 100%;
+    .at-title {
+      margin-top: 80px;
+      color: @textgray;
+      font-size: 32px;
+      font-weight: normal;
+      span {
+        color: @maincolor;
+        font-weight: bold;
+      }
+    }
+    .at-description {
+      color: @textgray;
+      font-weight: lighter;
+      font-size: 16px;
+    }
+    .at-links {
+      margin-top: 40px;
+      margin-bottom: 20px;
+
+      a:last-child {
+        margin-left: 10px;
+      }
+    }
+    .cc-logo {
+      width: 200px;
+      margin: 50px auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// 课程样式修改
+.cc-course {
+  .cc-course-header {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    > a {
+      position: absolute;
+      right: -10px;
+      top: 8px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .row {
+    > li {
+      padding: 5px;
+    }
+    a {
+      display: block;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      background-color: @mainwhite;
+      text-align: center;
+      &:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+      }
+    }
+
+  }
+  h2 {
+    float: left;
+    left: -10px;
+    position: absolute;
+    color: @textmain;
+    font-weight: 500;
+    display: inline-block;
+  }
+}
+
+//页脚样式修改
+.cc-footer {
+  background-color: @mainwhite;
+  .contact-way {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  nav {
+    padding: 15px;
+    padding-top: 0px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    a {
+      font-weight: lighter;
+      margin: 10px;
+      color: @textmain;
+      &:hover {
+        color: @maincolor;
+        text-decoration: none;
+      }
+    }
+    i {
+      font-style: normal;
+    }
+  }
+
+  .copyright {
+    font-weight: lighter;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .weixin-icon {
+    background: url(//e.jikexueyuan.com/headerandfooter/images/otherway.png) -28px 0px no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    margin-right: 20px;
+  }
+
+  .sina-icon {
+    background: url(//e.jikexueyuan.com/headerandfooter/images/otherway.png) 0px 0px no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    margin-right: 20px;
+  }
+
+  .facebook-icon {
+    background: url(//e.jikexueyuan.com/headerandfooter/images/otherway.png) -104px 0px no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    margin-right: 20px;
+  }
+
+  .google-icon {
+    background: url(//e.jikexueyuan.com/headerandfooter/images/otherway.png) -80px 0px no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    margin-right: 20px;
+  }
+}
+
+// 文章页面
+.cc-art-title {
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  background-color: @maincolor-light;
+  position: relative;
+  h1 {
+    top: 80px;
+    position: absolute;
+    font-size: 26px;
+    color: @mainwhite;
+  }
+}
+
+.cc-art-body {
+  margin-top: 50px;
+  .container {
+    position: relative;
+  }
+  margin-bottom: 20px;
+  background-color: @mainwhite;
+  .cc-art-nav {
+    padding-top: 15px;
+    .cc-art-nav-head {
+      margin-top: 5px;
+      color: @textmain;
+      &:link, &:visited, &:hover, &:active {
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        display: block;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+    }
+    .nav-tabs {
+      border-bottom: none;
+      background-color: @mainwhite;
+      > li {
+        text-align: left;
+        &.active, &:hover {
+          border-right: 2px solid @maincolor;
+        }
+        a, span {
+          font-weight: normal;
+          padding-left: 0px;
+          color: @maincolor-hover;
+          &:link, &:visited, &:hover, &:active {
+            background-color: transparent;
+            border: none;
+          }
+        }
+        span {
+          float: right;
+        }
+      }
+
+      .secondmenu > li > a {
+        color: @maincolor-hover;
+        padding-left: 2em;
+        &:link, &:visited, &:hover, &:active {
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
+  }
+  .cc-art-main {
+    padding-bottom: 15px;
+    #content {
+      width: 100%;
+    }
+    font-size: 14px;
+    h1 {
+      font-size: 36px;
+      color: @textmain;
+      padding-bottom: 10px;
+    }
+    h2 {
+      padding: 10px 0px;
+      font-size: 24px;
+      color: @textmain;
+    }
+    h3 {
+      padding: 10px 0px;
+      font-size: 18px;
+      color: @textmain;
+    }
+    a {
+      padding-left: 0px;
+      color: @maincolor;
+      font-weight: normal;
+    }
+    p {
+      padding-left: 0px;
+      color: @textmain;
+      font-size: 14px;
+      margin: 15px;
+      margin-left: 2em;
+    }
+    code, kbd, pre, samp {
+      color: @mainwhite;
+      background: @maincolor;
+      font-family: 'Microsoft YaHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif !important;
+      font-weight: lighter;
+    }
+    pre {
+      margin-left: 2em;
+      border: 1px solid #eee;
+      background-color: #fafafa;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      code, kbd, samp {
+        color: @textmain;
+        background: none;
+      }
+    }
+    .cc-art-download{
+      a{
+        display: inline-block;
+        background-color: @maincolor !important;
+        color: @mainwhite !important;
+        padding: 4px 10px;
+        margin-right: 10px;
+        &:hover{
+          background-color: @maincolor-hover !important;
+          text-decoration: none;
+
+        }
+      }
+    }
+  }
+  .cc-art-edit {
+    padding-right: 15px;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+  }
+  .cc-art-pre-next {
+    margin-top: 20px;
+  }
+  .cc-art-next {
+    float: right;
+  }
+}
